@@ -1,0 +1,131 @@
+/* ESTILOS DE SLIDER */
+
+/* #contenido {
+ text-align: center;
+ font-size: 2.0em;
+ margin: 10px 0;
+}
+#busqueda {
+    text-align: center;
+    font-size: 1em;
+    margin: 10px 0;
+   } */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+}
+img{
+ display: block;   
+ width: 100%;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.main_header_titulo{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 5px 0; 
+}
+
+.main_nav{
+    margin: 10px;
+    text-align: center;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: rgb(46, 40, 40);
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: block;
+}
+
+.menu_item{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin: 0px;
+    display: inline-block;
+    
+}
+.menu_item:hover{
+    
+    background: rgb(138, 134, 134);
+    color: white;
+}
+#login{
+    text-align: right;
+    display: block;
+    padding: 10px;
+}
+
+#busqueda{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em
+    
+}
+
+ /*ESTILO PARA LOS PRODUCTOS*/
+
+ .contenedor_de_productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+ .productos{
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+ }
+ .productos_img{
+    width: 100%;
+    height: 150px;
+    object-fit: scale-down;
+ }
+
+ .productos_icono{
+    display: block;
+    margin-top: 18px
+ }
+
+/* SLIDERR */
+.slider{
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+}
+.slider li{
+width: 50%;
+list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    55% {margin-left: -200%;}
+    75% {margin-left: -200%;}
+
+    85% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
